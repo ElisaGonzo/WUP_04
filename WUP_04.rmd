@@ -49,8 +49,12 @@ There is a visible difference in the boxplot that shows the graduates are higher
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 ```{r}
-favstats(momheight~Sex,data=ucdavis1)
+favstats(WORDSUM~DEGREE,data=GSScsv)
 ```
+
+
+The min of jr college is 8 and max is 12 which matches with the max of the others even though they have the lowest number of people. The HIGH SCHOOL with the highest number of attendance has the lowest min and barley makes the cut in the other categories. 
+
 
 ## Inferential Results
 
