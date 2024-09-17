@@ -11,7 +11,7 @@ output:
 require(knitr)
 require(tidyverse)
 require(tigerstats)
-
+GSScsv <- read_csv("GSScsv.csv")
 ```
 
 # Introduction
@@ -36,9 +36,21 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+boxplot(WORDSUM~DEGREE,data=GSScsv)
+```
+
+
+There is a visible difference in the boxplot that shows the graduates are higher than other box, but jr college isn't very far behind them. It seems more people get their degrees at jr. college than high school diploma. 
+
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+favstats(momheight~Sex,data=ucdavis1)
+```
 
 ## Inferential Results
 
