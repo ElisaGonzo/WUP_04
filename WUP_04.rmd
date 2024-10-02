@@ -59,7 +59,7 @@ favstats(WORDSUM~DEGREE,data=GSScsv)
 ```
 
 
-The min of jr college is 8 and max is 12 which matches with the max of the others even though they have the lowest number of people. The HIGH SCHOOL with the highest number of attendance has the lowest min and barley makes the cut in the other categories. 
+The min of jr college is 8 and max is 12 which matches with the max of the others even though they have the lowest number of people. The HIGH SCHOOL with the highest number of attendance has the lowest min and barley makes the cut in the other categories. The difference in values shows that the HIGH SCHOOL shows less of a result that the jr college. 
 
 
 ## Inferential Results
@@ -75,6 +75,9 @@ summary.aov(model1)
 par(mar = c(3, 17, 2, 2))
 plot(TukeyHSD(model1,las=2, conf.level = 0.98))
 ```
+
+The graph shows the obvious difference between the LT high school and the HIGH SCHOOL GRADUATEDS compared to the other GRAUDATES when getting a degree. With the JR college being the highest of them all. 
+
 
 # Discussion and Conclusion
 
